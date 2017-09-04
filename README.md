@@ -115,11 +115,11 @@ var map = L.map('map', {
 
 ![blending](images/blending.png)Fig 3. Blending map of US
 
-![New York](images/New York.png)
+![New York](images/New_York.png)
 Fig 4a. New York
 ![Washington, D.C](images/Washington, D.C.png)
 Fig 4b. Washington, D.C.
-![sea](images/storm petrel.png)
+![sea](images/storm_petrel.png)
 Fig 4c. Storm-Petrel on Atlantic
 ![Chicago](images/Chicago.png)
 Fig 4d. Chicago sailing
@@ -127,11 +127,11 @@ Fig 4d. Chicago sailing
 Fig 4e. Detroit train
 ![Seattle](images/Seattle.png)
 Fig 4f. Seattle night
-![Los Angeles](images/Los Angeles.png)
+![Los Angeles](images/Los_Angeles.png)
 Fig 4g. Los Angeles pets
 
 Tracing the photos taken by someone, we can directly draw his/her trajectory.
-![bridger_wilderness_area](images/Bridger Wilderness Area.png)
+![bridger_wilderness_area](images/Bridger_Wilderness_Area.png)
 Fig 5. Bridger Wilderness Area Explorers
 
 **For convenient usage**, the part of data has been exported to the local files in `./view/data/` and can be directly loaded when opening the `blending.html` or `hexagon.html`.
