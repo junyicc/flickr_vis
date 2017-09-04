@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blending Map</title>
+    <script src="lib/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
+    <script src="lib/leaflet/leaflet.js"></script>
+
+    <script src="js/blending.js"></script>
+    <script src="js/screen_canvas.js"></script>
+    <script src="data/flickr_points.js"></script>
+
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map{
+            height: 100%;
+        }
+        tr:nth-child(even) {background-color: #f2f2f2}
+        /* .legend {
+            line-height: 18px;
+            color: #555;
+        }
+        .legend i {
+            width: 18px;
+            height: 18px;
+            float: left;
+            margin-right: 8px;
+            opacity: 0.7;
+        } */
+    </style>
+</head>
+<body onload="init()">
+<div id="map"></div>
+</body>
+</html>
