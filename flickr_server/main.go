@@ -1,7 +1,9 @@
 package main
 
-import "flickr_server/util"
+import (
+	"github.com/CAIJUNYI/flickr_vis/flickr_server/controller"
+)
 
 func main() {
-	util.Start()
+	controller.StartServer()
 }
