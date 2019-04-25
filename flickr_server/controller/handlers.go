@@ -8,8 +8,9 @@ import (
 	"text/template"
 )
 
-func handleHexagon(w http.ResponseWriter, r *http.Request) {
-	tmpl, err := template.ParseFiles(path.Join("view", "hexagon.html"))
+// HandleHexagon handles hexagon request
+func HandleHexagon(w http.ResponseWriter, r *http.Request) {
+	tmpl, err := template.ParseFiles(path.Join("./view", "hexagon.html"))
 	if err != nil {
 		log.Println(err.Error())
 		http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -18,8 +19,9 @@ func handleHexagon(w http.ResponseWriter, r *http.Request) {
 	tmpl.Execute(w, nil)
 }
 
-func handleBlending(w http.ResponseWriter, r *http.Request) {
-	tmpl, err := template.ParseFiles(path.Join("view", "blending.html"))
+// HandleBlending handles blending request
+func HandleBlending(w http.ResponseWriter, r *http.Request) {
+	tmpl, err := template.ParseFiles(path.Join("./view", "blending.html"))
 	if err != nil {
 		log.Println(err.Error())
 		http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -28,7 +30,8 @@ func handleBlending(w http.ResponseWriter, r *http.Request) {
 	tmpl.Execute(w, nil)
 }
 
-func handleFlickrPoints(w http.ResponseWriter, r *http.Request) {
+// HandleFlickrPoints handle flickr points request
+func HandleFlickrPoints(w http.ResponseWriter, r *http.Request) {
 	log.Printf("url: %s", r.URL.Path)
 	featureCollections := queryDB()
 	w.Header().Set("Content-Type", "application/json")
